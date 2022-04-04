@@ -441,6 +441,7 @@ if (isset($_POST['submit'])) {
 					<?php if (isset($contactError)) echo $contactError; ?>
 				</div>
 				<!--End form-group-->
+				<!--City start-->
 				<div class="form-group">
 					<label for="city">City</label>
 					<select name="city" id="city" class="form-control demo-default" required>
@@ -476,7 +477,7 @@ if (isset($_POST['submit'])) {
 				<!--End form-group-->
 				<div class="form-inline">
 					<input type="checkbox" name="term" value="true" required style="margin-left:10px;">
-					<span style="margin-left:10px;"><b>I am agree to donate my blood and show my Name, Contact Nos. and E-Mail in Blood donors List</b></span>
+					<span style="margin-left:10px;"><b>I am agreed to donate my blood and show my Name, Contact No. and E-Mail in Blood donors List</b></span>
 				</div>
 				<!--End form-group-->
 
