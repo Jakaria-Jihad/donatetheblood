@@ -326,7 +326,7 @@ if (isset($_POST['submit'])) {
 				<!--End form-group-->
 				<div class="form-group">
 					<label for="gender">Gender</label><br>
-					Male<input type="radio" name="gender" id="gender" value="Male" style="margin-left:10px; margin-right:10px;" checked>
+					Male<input type="radio" name="gender" id="gender" value="Male" style="margin-left:10px; margin-right:10px;">
 					Female<input type="radio" name="gender" id="gender" value="Female" style="margin-left:10px;">
 					<?php if (isset($genderError)) echo $genderError; ?>
 				</div>
@@ -452,6 +452,7 @@ if (isset($_POST['submit'])) {
 					<label for="city">City</label>
 					<select name="city" id="city" class="form-control demo-default" required>
 						<option value="">-- Select --</option>
+						<?php if (isset($city)) echo '<option selected value="'.$city.'">'.$city.'</option>'; ?>
 						<optgroup title="Dhaka" label="&raquo; Dhaka"></optgroup>
 						<option value="Ajimpur">Ajimpur</option>
 						<option value="Mirpur-1">Mirpur-1</option>
@@ -482,7 +483,7 @@ if (isset($_POST['submit'])) {
 				</div>
 				<!--End form-group-->
 				<div class="form-inline">
-					<input type="checkbox" name="term" value="true" required style="margin-left:10px;">
+					<input type="checkbox" checked="" name="term" value="true" required style="margin-left:10px;">
 					<span style="margin-left:10px;"><b>I am agreed to donate my blood and show my Name, Contact No. and E-Mail in Blood donors List</b></span>
 				</div>
 				<!--End form-group-->
