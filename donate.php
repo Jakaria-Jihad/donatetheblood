@@ -203,7 +203,9 @@ if (isset($_POST['submit'])) {
 		if (isset($name) && isset($blood_group) && isset($gender) && isset($day) && isset($month) && isset($year) && isset($email) && isset($contact) && isset($city) && isset($password)) {
 
 			$donorDOB = $year . "-" . $month . "-" . $day;
-			$sql = "INSERT INTO donor(name, gender, email, city, dob, contact_no, save_life_date, password) VALUES('$name','$gender','$email','$city','$donorDOB','$contact','0','$password')";
+			$password = md5($password);
+
+			$sql = "INSERT INTO donor (name, gender, blood_group, email, city, dob, contact_no, save_life_date, password) VALUES('$name','$gender','$blood_group','$email','$city','$donorDOB','$contact','0','$password')";
 
 
 			if (mysqli_query($connection, $sql)) {
@@ -301,7 +303,7 @@ if (isset($_POST['submit'])) {
 			<form class="form-group" action="" method="post" novalidate="">
 				<div class="form-group">
 					<label for="fullname">Full Name</label>
-					<input type="text" name="name" id="fullname" placeholder="Full Name" required pattern="[A-Za-z/\s]+" title="Only lower and upper case and space" class="form-control">
+					<input type="text" name="name" id="fullname" placeholder="Full Name" required pattern="[A-Za-z/\s]+" title="Only lower and upper case and space" class="form-control" value="<?php if (isset($name)) echo $name; ?>">
 					<?php if (isset($nameError)) echo $nameError; ?>
 				</div>
 				<!--full name-->
@@ -309,6 +311,7 @@ if (isset($_POST['submit'])) {
 					<label for="name">Blood Group</label><br>
 					<select class="form-control demo-default" id="blood_group" name="blood_group" required>
 						<option value="">---Select Your Blood Group---</option>
+						<?php if (isset($blood_group)) echo '<option selected value="'.$blood_group.'">'.$blood_group.'</option>'; ?>
 						<option value="A+">A+</option>
 						<option value="A-">A-</option>
 						<option value="B+">B+</option>
@@ -332,6 +335,7 @@ if (isset($_POST['submit'])) {
 					<label for="name">Date of Birth</label><br>
 					<select class="form-control demo-default" id="date" name="day" style="margin-bottom:10px;" required>
 						<option value="">---Date---</option>
+						<?php if (isset($day)) echo '<option selected value="'.$day.'">'.$day.'</option>'; ?>
 						<option value="01">01</option>
 						<option value="02">02</option>
 						<option value="03">03</option>
@@ -366,6 +370,7 @@ if (isset($_POST['submit'])) {
 					</select>
 					<select class="form-control demo-default" name="month" id="month" style="margin-bottom:10px;" required>
 						<option value="">---Month---</option>
+						<?php if (isset($month)) echo '<option selected value="'.$month.'">'.$month.'</option>'; ?>
 						<option value="01">January</option>
 						<option value="02">February</option>
 						<option value="03">March</option>
@@ -381,6 +386,7 @@ if (isset($_POST['submit'])) {
 					</select>
 					<select class="form-control demo-default" id="year" name="year" style="margin-bottom:10px;" required>
 						<option value="">---Year---</option>
+						<?php if (isset($year)) echo '<option selected value="'.$year.'">'.$year.'</option>'; ?>
 						<option value="1957">1957</option>
 						<option value="1958">1958</option>
 						<option value="1959">1959</option>
@@ -432,12 +438,12 @@ if (isset($_POST['submit'])) {
 				<!--End form-group-->
 				<div class="form-group">
 					<label for="fullname">Email</label>
-					<input type="text" name="email" id="email" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="Please write correct email" class="form-control">
+					<input type="text" name="email" id="email" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="Please write correct email" class="form-control" value="<?php if (isset($email)) echo $email; ?>">
 					<?php if (isset($emailError)) echo $emailError; ?>
 				</div>
 				<div class="form-group">
 					<label for="contact_no">Contact No</label>
-					<input type="text" name="contact_no" value="" placeholder="03********" class="form-control" required pattern="^\d{11}$" title="11 numeric characters only" maxlength="11">
+					<input type="text" name="contact_no" value="" placeholder="01********" class="form-control" required pattern="^\d{11}$" title="11 numeric characters only" maxlength="11" value="<?php if (isset($contact)) echo $contact; ?>">
 					<?php if (isset($contactError)) echo $contactError; ?>
 				</div>
 				<!--End form-group-->
