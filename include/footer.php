@@ -14,6 +14,8 @@
 							<div class="details">
 								 <p><i class="fa fa-phone"></i> +8801788885740</p>
 								<p><i class="fa fa-envelope"></i> jakaria.jihad@northsouth.edu</p>
+								<p><i class="fa fa-phone"></i> +8801552390950</p>
+								<p><i class="fa fa-envelope"></i> sadia.chowdhury1@northsouth.edu</p>
 							</div>
 
 					</div>
