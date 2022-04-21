@@ -67,9 +67,9 @@
 						<h1 class="text-center"  style="color: white; font-weight: 700;padding: 10px 0 0 0;">Donate The Blood</h1>
 						<hr class="white-bar">
 						<p class="text-center pera-text">
-							We are a group of exceptional programmers; our aim is to promote education. If you are a student, then contact us to secure your future. We deliver free international standard video lectures and content. We are also providing services in Web & Software Development.
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda ducimus, suscipit id odit harum itaque repudiandae amet quaerat, quia nihil hic impedit maiores qui, perferendis esse nulla iste at adipisci! A voluptatibus eaque, minus labore debitis distinctio deserunt rem, quo ad culpa inventore magni nemo qui laboriosam. Doloremque consequatur commodi cum dicta. Unde voluptatem soluta nulla harum voluptatum eveniet incidunt reprehenderit, cupiditate commodi error modi accusamus molestiae iure nostrum nemo maiores officia provident saepe. Soluta illo expedita laboriosam natus voluptatibus qui eaque quidem voluptas obcaecati. Aperiam quidem tempora corrupti dolor officia magni dicta dolorum laudantium quibusdam veniam, explicabo architecto itaque?
 
-							We are a group of exceptional programmers; our aim is to promote education. If you are a student, then contact us to secure your future. We deliver free international standard video lectures and content. We are also providing services in Web & Software Development.
+						
 						</p>
 						<a href="#" class="btn btn-default btn-lg text-center center-aligned">Become a Life Saver!</a>
 					</div>
@@ -85,7 +85,7 @@
      						<h3 class="text-center red">Our Vission</h3>
 								<img src="img/binoculars.png" alt="Our Vission" class="img img-responsive" width="168" height="168">
 								<p class="text-center">
-									We are a group of exceptional programmers; our aim is to promote education. If you are a student, then contact us to secure your future. We deliver free international standard video lectures and content. We are also providing services in Web & Software Development.
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo modi ullam, necessitatibus vero aliquid facere, reprehenderit aperiam corrupti unde facilis sapiente dolore. Quis ut, illo animi vitae tenetur quia, ad, exercitationem officia eveniet perferendis sapiente distinctio aspernatur itaque voluptatibus explicabo.
 								</p>
 						</div>
     				</div>
@@ -95,7 +95,7 @@
       							<h3 class="text-center red">Our Goal</h3>
 								<img src="img/target.png" alt="Our Vission" class="img img-responsive" width="168" height="168">
 								<p class="text-center">
-									We are a group of exceptional programmers; our aim is to promote education. If you are a student, then contact us to secure your future. We deliver free international standard video lectures and content. We are also providing services in Web & Software Development.
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum qui debitis ab velit? Sunt, quo? Eaque omnis quas nulla doloremque nam soluta porro pariatur, est dignissimos inventore magnam aliquid? Reprehenderit ut vitae iste. Sequi sapiente, quibusdam repellendus nihil dolor voluptatem.
 								</p>
 						</div>
     				</div>
@@ -105,7 +105,7 @@
       						<h3 class="text-center red">Our Mission</h3>
 								<img src="img/goal.png" alt="Our Vission" class="img img-responsive" width="168" height="168">
 								<p class="text-center">
-									We are a group of exceptional programmers; our aim is to promote education. If you are a student, then contact us to secure your future. We deliver free international standard video lectures and content. We are also providing services in Web & Software Development.
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, error placeat quae perspiciatis illo ipsa, tempore corrupti excepturi praesentium dolores libero quaerat nostrum, odit at nihil saepe doloribus ratione. Nam ea ipsam asperiores quia exercitationem praesentium ex quos hic omnis?
 								</p>
 							</div>
    			 		</div>
