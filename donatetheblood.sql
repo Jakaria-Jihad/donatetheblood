@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 21, 2022 at 11:17 AM
+-- Generation Time: Apr 22, 2022 at 11:04 PM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 8.0.15
 
@@ -41,13 +41,6 @@ CREATE TABLE `donor` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `donor`
---
-
-INSERT INTO `donor` (`id`, `name`, `gender`, `blood_group`, `email`, `city`, `dob`, `contact_no`, `save_life_date`, `password`) VALUES
-(4, 'Sadman Ahmed', 'Male', 'AB+', 'sadman@gmail.com', 'Ajimpur', '1968-03-14', '01788885740', '0', 'e10adc3949ba59abbe56e057f20f883e');
-
---
 -- Indexes for dumped tables
 --
 
@@ -65,7 +58,7 @@ ALTER TABLE `donor`
 -- AUTO_INCREMENT for table `donor`
 --
 ALTER TABLE `donor`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=0;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
