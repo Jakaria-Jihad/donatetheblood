@@ -34,7 +34,7 @@
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Donor Name<!-- Donor Name -->
+          <?php if(isset($_SESSION['name'])) echo $_SESSION['name']?>
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
           

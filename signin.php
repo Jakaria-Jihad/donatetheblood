@@ -121,7 +121,7 @@ box-shadow: 0px 2px 5px -2px rgba(89,89,89,0.95);
 					<?php if(isset($passwordError)) echo $passwordError; ?>
 				</div>
 				<div class="form-group">
-					<button class="btn btn-danger btn-lg center-aligned" type="submit" name="SignIn">Signin</button>
+					<button class="btn btn-danger btn-lg center-aligned" type="submit" name="Signin">Signin</button>
 				</div>
 			</form>
 		</div>
