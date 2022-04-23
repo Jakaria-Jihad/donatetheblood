@@ -3,7 +3,7 @@
 	//include header file
 	include ('include/header.php');
 
-	if(isset($_POST['Signin'])){
+	if(isset($_POST['SignIn'])){
 
 		//email check
 		if (isset($_POST['email']) && !empty($_POST['email'])) {
@@ -51,7 +51,7 @@
 					}else{
 
 						$submitError = '<div class="alert alert-danger alert-dismissible fade show" role="alert">
-						<strong>Sorry! Nothing found about these credentials. Try again!</strong>
+						<strong>Sorry! No record is found. Please enter valid email or password.</strong>
 						<button type="button" class="close" data-dismiss="alert" aria-label="Close">
 						  <span aria-hidden="true">&times;</span>
 						</button>
@@ -103,9 +103,11 @@ box-shadow: 0px 2px 5px -2px rgba(89,89,89,0.95);
 <div class="conatiner size ">
 	<div class="row">
 		<div class="col-md-6 offset-md-3 form-container">
-		<h3>Signin</h3>
+		<h3>SignIn</h3>
 		<hr class="red-bar">
-		<?php if(isset($submitError)) echo $submitError; ?>
+		<?php 
+		if(isset($submitError)) echo $submitError; 
+		?>
 
 		<!-- Erorr Messages -->
 
@@ -118,10 +120,12 @@ box-shadow: 0px 2px 5px -2px rgba(89,89,89,0.95);
 				<div class="form-group">
 					<label for="password">Password</label>
 					<input type="password" name="password" placeholder="Password" required class="form-control">
-					<?php if(isset($passwordError)) echo $passwordError; ?>
+					<?php 
+					if(isset($passwordError)) echo $passwordError; 
+					?>
 				</div>
 				<div class="form-group">
-					<button class="btn btn-danger btn-lg center-aligned" type="submit" name="Signin">Signin</button>
+					<button class="btn btn-danger btn-lg center-aligned" type="submit" name="SignIn">SignIn</button>
 				</div>
 			</form>
 		</div>
