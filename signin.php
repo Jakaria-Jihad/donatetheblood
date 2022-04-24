@@ -3,7 +3,7 @@
 	//include header file
 	include ('include/header.php');
 
-	if(isset($_POST['SignIn'])){
+	if(isset($_POST['Signin'])){
 
 		//email check
 		if (isset($_POST['email']) && !empty($_POST['email'])) {
@@ -41,8 +41,8 @@
 						while($row = mysqli_fetch_assoc($result)){
 							$_SESSION['user_id'] = $row['id'];
 							$_SESSION['name'] = $row['name'];
-							$_SESSION['email'] = $row['email'];
-							$_SESSION['user_id'] = $row['id'];
+							$_SESSION['save _life_date'] = $row['save _life_date'];
+							
 
 							header('Location: user/index.php');
 
@@ -95,7 +95,7 @@ box-shadow: 0px 2px 5px -2px rgba(89,89,89,0.95);
  <div class="container-fluid red-background size">
 	<div class="row">
 		<div class="col-md-6 offset-md-3">
-			<h1 class="text-center">SignIn</h1>
+			<h1 class="text-center">Signin</h1>
 			<hr class="white-bar">
 		</div>
 	</div>
@@ -125,7 +125,7 @@ box-shadow: 0px 2px 5px -2px rgba(89,89,89,0.95);
 					?>
 				</div>
 				<div class="form-group">
-					<button class="btn btn-danger btn-lg center-aligned" type="submit" name="SignIn">SignIn</button>
+					<button class="btn btn-danger btn-lg center-aligned" type="submit" name="Signin">Signin</button>
 				</div>
 			</form>
 		</div>
