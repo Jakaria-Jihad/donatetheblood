@@ -95,7 +95,9 @@
 		<?php
 
 			$sql = "SELECT * FROM donor";
+
 			$result = mysqli_query($connection, $sql);
+			
 			if(mysqli_num_rows($result)>0){
 				while($row = mysqli_fetch_assoc($result)){
 					if($row['save_life_date']==0){
@@ -110,13 +112,34 @@
 
 
 					}else{
-						echo '<div class ="col-md-3 col-sm-12 col-lg-3 donors_data">
+						$date = $row['save_life_date'];
+						$start = date_create("$date");
+								$send = date_create();
+								$diff = date_diff($start,$end);
+
+							
+							$diffMonth =$diff->m;
+							
+								
+								if($diffMonth>=3){
+									echo '<div class ="col-md-3 col-sm-12 col-lg-3 donors_data">
+						<span class = "name">'.$row['name'].'</span>
+						<span>'.$row['gender'].'</span>
+						<span>'.$row['blood_group'].'</span>
+						<span>'.$row['city'].'</span>
+						<span>'.$row['contact_no'].'</span>
+						<span>'.$row['email'].'</span>
+						</div>';
+								}else{
+									echo '<div class ="col-md-3 col-sm-12 col-lg-3 donors_data">
 						<span class = "name">'.$row['name'].'</span>
 						<span>'.$row['gender'].'</span>
 						<span>'.$row['blood_group'].'</span>
 						<span>'.$row['city'].'</span>
 						<h4 class="name text-center">Donated</h4>
 						</div>';
+								}
+						
 					}
 				}
 			}else{
